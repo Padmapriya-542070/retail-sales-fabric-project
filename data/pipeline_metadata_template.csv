@@ -1,0 +1,4 @@
+config_id,source_file,target_table,load_type,watermark_column,business_key,file_format,is_active
+1,customers.csv,customers,FULL,updated_at,customer_id,CSV,True
+2,products.csv,products,FULL,updated_at,product_id,CSV,True
+3,orders.csv,orders,INCREMENTAL,event_timestamp,order_line_id,CSV,True

@@ -1,0 +1,2 @@
+Retail Sales Fabric Practice Dataset
+Core CSVs: customers/products/orders 500 rows each. JSON 100 records. Four incremental batches 25 rows each. Includes duplicates, null/blank values, invalid emails/dates, orphan FKs, negative values, schema evolution promo_code, INSERT UPDATE DELETE events. Relationships customers.customer_id->orders.customer_id and products.product_id->orders.product_id intentionally violated for some records. Watermarks: updated_at,event_timestamp.
